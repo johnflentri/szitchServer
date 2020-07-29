@@ -13,7 +13,15 @@ const User = db.define('user', {
   password: {
     type: Sequelize.STRING,
     allowNull: false
-  }
+  },
+  accuracyPercent: {
+    type: Sequelize.STRING,
+    allowNull: true
+  },
+  killDeathRatio: {
+    type: Sequelize.STRING,
+    allowNull: true
+  },
 }, {
   timestamps: false,
   tableName: 'users'

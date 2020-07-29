@@ -23,7 +23,15 @@ router.get('/user', auth, async (req, res, next) => {
   try {
     const user = await User.findByPk(id)
     const users = await User.findAll()
-    res.json({ user })
+    res.json({ user, users })
+  } catch (error) {
+  }
+})
+
+router.get("/user/:id", async (req, res, next) => {
+  try {
+    const user = await User.findByPk(req.params.id)
+    res.json(user)
   } catch (error) {
   }
 })
