@@ -36,5 +36,13 @@ router.get("/user/:id", async (req, res, next) => {
   }
 })
 
+router.get('/user', auth, async (req, res, next) => {
+  try {
+    const userProfiles = await User.findAll()
+    res.json(userProfiles)
+  } catch (error) {
+  }
+})
+
 
 module.exports = router
