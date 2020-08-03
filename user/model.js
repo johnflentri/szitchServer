@@ -22,6 +22,14 @@ const User = db.define('user', {
     type: Sequelize.STRING,
     allowNull: true
   },
+  overallRank: {
+    type: Sequelize.STRING,
+    allowNull: true
+  },
+  avatarURL: {
+    type: Sequelize.TEXT,
+    allowNull: true
+  },
 }, {
   timestamps: false,
   tableName: 'users'
