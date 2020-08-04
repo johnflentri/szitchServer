@@ -10,7 +10,7 @@ module.exports = async function seedUsersAndStatistics() {
     password: userPassword,
     accuracyPercent: 29,
     killDeathRatio: 0.87,
-    overallRank: 4,
+    overallRank: 5,
     avatarURL: "https://www.pngkey.com/png/detail/902-9020252_igo-ninja-icon-ninja-free.png"
   });
 
@@ -21,26 +21,36 @@ module.exports = async function seedUsersAndStatistics() {
     accuracyPercent: 61,
     killDeathRatio: 1.05,
     overallRank: 2,
-    avatarURL: "https://www.pngkit.com/png/full/259-2598968_collection-of-free-directrix-download-on-ubisafe-ninja.png"
+    avatarURL: "https://i.ya-webdesign.com/images/ninja-clipart-png-7.png"
   });
 
-  const user4 = await User.create({
+  const user3 = await User.create({
     username: "ProAim123",
     email: "3",
     password: userPassword,
     accuracyPercent: 85,
     killDeathRatio: 1.55,
     overallRank: 1,
-    avatarURL: "https://i.ya-webdesign.com/images/ninja-clipart-png-7.png"
+    avatarURL: "https://www.pngkit.com/png/full/259-2598968_collection-of-free-directrix-download-on-ubisafe-ninja.png"
   });
 
-  const user3 = await User.create({
+  const user4 = await User.create({
     username: "ConsistentGamerGuy1",
     email: "4",
     password: userPassword,
     accuracyPercent: 50,
-    killDeathRatio: 1.01,
+    killDeathRatio: 1.09,
     overallRank: 3,
     avatarURL: "https://lh3.googleusercontent.com/proxy/JH4vvwZt-ooRUFCZw2TYMQQWrUdRf_xiA1RUGQFfDTob8EAesiX4pQviDpPlGnUKdfKptWEpIQzh4dSASCUuBz2rY-7LCBPP_fTyBkm561oL1gOfAn1GKAoiVTCFC1qfk1PcA_4"
+  });
+
+  const user5 = await User.create({
+    username: "SprayAndPray",
+    email: "5",
+    password: userPassword,
+    accuracyPercent: 42,
+    killDeathRatio: 1.18,
+    overallRank: 4,
+    avatarURL: "https://us.123rf.com/450wm/sudowoodo/sudowoodo1708/sudowoodo170800023/84484695-stock-vector-cartoon-ninja-drawing-in-chibi-manga-style-cute-vector-illustration-.jpg?ver=6"
   });
 }
