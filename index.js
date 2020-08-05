@@ -1,6 +1,7 @@
 const express = require("express")
 const cors = require("cors")
 const userRouter = require("./user/router")
+const eventRouter = require("./event/router")
 const authRouter = require('./auth/router')
 const seedFunction = require('./seeds/usersAndStatistics')
 
@@ -17,4 +18,5 @@ app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 app.use(corsMiddleware)
 app.use(jsonParser)
 app.use(userRouter)
+app.use(eventRouter)
 app.use(authRouter)
