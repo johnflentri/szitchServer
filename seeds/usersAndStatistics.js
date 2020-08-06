@@ -6,22 +6,30 @@ module.exports = async function seedUsersAndStatistics() {
   const userPassword = bcrypt.hashSync("1", 10)
 
   const user1 = await User.create({
-    username: "NewGuy24",
+    username: "ProTege",
     email: "1",
     password: userPassword,
-    accuracyPercent: 29,
-    killDeathRatio: 0.87,
-    overallRank: 5,
-    avatarURL: "https://www.pngkey.com/png/detail/902-9020252_igo-ninja-icon-ninja-free.png"
+    age: "15",
+    protential: "A",
+    bio: "I live and breath CSGO, I also just started playing",
+    accuracyPercent: 62,
+    killDeathRatio: 1.78,
+    averageDamagePerRound: 159,
+    overallRank: 2,
+    avatarURL: "https://www.pinclipart.com/picdir/middle/327-3278420_vocabulary-ninja-noun-clipart.png"
   });
 
   const user2 = await User.create({
     username: "CompetitiveCasualDude",
     email: "2",
     password: userPassword,
+    age: "23",
+    protential: "D",
+    bio: "Playing for 2 years, looking to join a good team and win local tournaments",
     accuracyPercent: 61,
     killDeathRatio: 1.05,
-    overallRank: 2,
+    averageDamagePerRound: 80,
+    overallRank: 3,
     avatarURL: "https://i.ya-webdesign.com/images/ninja-clipart-png-7.png"
   });
 
@@ -29,8 +37,12 @@ module.exports = async function seedUsersAndStatistics() {
     username: "ProAim123",
     email: "3",
     password: userPassword,
+    age: "25",
+    protential: "C-",
+    bio: "I've played entry-frag position for semi-pro teams, can play multiple positions",
     accuracyPercent: 85,
     killDeathRatio: 1.55,
+    averageDamagePerRound: 99,
     overallRank: 1,
     avatarURL: "https://www.pngkit.com/png/full/259-2598968_collection-of-free-directrix-download-on-ubisafe-ninja.png"
   });
@@ -39,9 +51,13 @@ module.exports = async function seedUsersAndStatistics() {
     username: "ConsistentGamerGuy1",
     email: "4",
     password: userPassword,
+    age: "19",
+    protential: "C+",
+    bio: "I just play for fun",
     accuracyPercent: 50,
     killDeathRatio: 1.09,
-    overallRank: 3,
+    averageDamagePerRound: 76,
+    overallRank: 4,
     avatarURL: "https://lh3.googleusercontent.com/proxy/JH4vvwZt-ooRUFCZw2TYMQQWrUdRf_xiA1RUGQFfDTob8EAesiX4pQviDpPlGnUKdfKptWEpIQzh4dSASCUuBz2rY-7LCBPP_fTyBkm561oL1gOfAn1GKAoiVTCFC1qfk1PcA_4"
   });
 
@@ -49,10 +65,28 @@ module.exports = async function seedUsersAndStatistics() {
     username: "SprayAndPray",
     email: "5",
     password: userPassword,
+    age: "18",
+    protential: "C+",
+    bio: "I am good at running and shooting",
     accuracyPercent: 42,
     killDeathRatio: 1.18,
-    overallRank: 4,
+    averageDamagePerRound: 61,
+    overallRank: 5,
     avatarURL: "https://us.123rf.com/450wm/sudowoodo/sudowoodo1708/sudowoodo170800023/84484695-stock-vector-cartoon-ninja-drawing-in-chibi-manga-style-cute-vector-illustration-.jpg?ver=6"
+  });
+
+  const user6 = await User.create({
+    username: "NewGuy24",
+    email: "6",
+    password: userPassword,
+    age: "16",
+    protential: "B",
+    bio: "I want to get good and be pro one day!",
+    accuracyPercent: 29,
+    killDeathRatio: 0.87,
+    averageDamagePerRound: 75,
+    overallRank: 6,
+    avatarURL: "https://www.pngkey.com/png/detail/902-9020252_igo-ninja-icon-ninja-free.png"
   });
 
   const CologneESL = await Event.create({
