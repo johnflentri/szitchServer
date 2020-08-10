@@ -46,6 +46,10 @@ const User = db.define('user', {
     type: Sequelize.TEXT,
     allowNull: true
   },
+  newPlayer: {
+    type: Sequelize.BOOLEAN,
+    allowNull: false
+  },
 }, {
   timestamps: false,
   tableName: 'users'

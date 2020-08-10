@@ -16,7 +16,8 @@ module.exports = async function seedUsersAndStatistics() {
     killDeathRatio: 1.78,
     averageDamagePerRound: 159,
     overallRank: 2,
-    avatarURL: "https://www.pinclipart.com/picdir/middle/327-3278420_vocabulary-ninja-noun-clipart.png"
+    avatarURL: "https://www.pinclipart.com/picdir/middle/327-3278420_vocabulary-ninja-noun-clipart.png",
+    newPlayer: false
   });
 
   const user2 = await User.create({
@@ -30,7 +31,8 @@ module.exports = async function seedUsersAndStatistics() {
     killDeathRatio: 1.05,
     averageDamagePerRound: 80,
     overallRank: 3,
-    avatarURL: "https://i.ya-webdesign.com/images/ninja-clipart-png-7.png"
+    avatarURL: "https://i.ya-webdesign.com/images/ninja-clipart-png-7.png",
+    newPlayer: true
   });
 
   const user3 = await User.create({
@@ -44,7 +46,8 @@ module.exports = async function seedUsersAndStatistics() {
     killDeathRatio: 1.55,
     averageDamagePerRound: 99,
     overallRank: 1,
-    avatarURL: "https://www.pngkit.com/png/full/259-2598968_collection-of-free-directrix-download-on-ubisafe-ninja.png"
+    avatarURL: "https://www.pngkit.com/png/full/259-2598968_collection-of-free-directrix-download-on-ubisafe-ninja.png",
+    newPlayer: true
   });
 
   const user4 = await User.create({
@@ -58,7 +61,8 @@ module.exports = async function seedUsersAndStatistics() {
     killDeathRatio: 1.09,
     averageDamagePerRound: 76,
     overallRank: 4,
-    avatarURL: "https://lh3.googleusercontent.com/proxy/JH4vvwZt-ooRUFCZw2TYMQQWrUdRf_xiA1RUGQFfDTob8EAesiX4pQviDpPlGnUKdfKptWEpIQzh4dSASCUuBz2rY-7LCBPP_fTyBkm561oL1gOfAn1GKAoiVTCFC1qfk1PcA_4"
+    avatarURL: "https://lh3.googleusercontent.com/proxy/JH4vvwZt-ooRUFCZw2TYMQQWrUdRf_xiA1RUGQFfDTob8EAesiX4pQviDpPlGnUKdfKptWEpIQzh4dSASCUuBz2rY-7LCBPP_fTyBkm561oL1gOfAn1GKAoiVTCFC1qfk1PcA_4",
+    newPlayer: true
   });
 
   const user5 = await User.create({
@@ -72,7 +76,8 @@ module.exports = async function seedUsersAndStatistics() {
     killDeathRatio: 1.18,
     averageDamagePerRound: 61,
     overallRank: 5,
-    avatarURL: "https://us.123rf.com/450wm/sudowoodo/sudowoodo1708/sudowoodo170800023/84484695-stock-vector-cartoon-ninja-drawing-in-chibi-manga-style-cute-vector-illustration-.jpg?ver=6"
+    avatarURL: "https://us.123rf.com/450wm/sudowoodo/sudowoodo1708/sudowoodo170800023/84484695-stock-vector-cartoon-ninja-drawing-in-chibi-manga-style-cute-vector-illustration-.jpg?ver=6",
+    newPlayer: true
   });
 
   const user6 = await User.create({
@@ -86,7 +91,8 @@ module.exports = async function seedUsersAndStatistics() {
     killDeathRatio: 0.87,
     averageDamagePerRound: 75,
     overallRank: 6,
-    avatarURL: "https://www.pngkey.com/png/detail/902-9020252_igo-ninja-icon-ninja-free.png"
+    avatarURL: "https://www.pngkey.com/png/detail/902-9020252_igo-ninja-icon-ninja-free.png",
+    newPlayer: true
   });
 
   const CologneESL = await Event.create({
