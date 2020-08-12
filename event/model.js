@@ -21,6 +21,18 @@ const Event = db.define('event', {
   logo: {
     type: Sequelize.TEXT,
     allowNull: true
+  },
+  prize1: {
+    type: Sequelize.STRING,
+    allowNull: true
+  },
+  prize2: {
+    type: Sequelize.STRING,
+    allowNull: true
+  },
+  prize3: {
+    type: Sequelize.STRING,
+    allowNull: true
   }
 }, {
   timestamps: false,
