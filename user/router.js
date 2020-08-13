@@ -44,5 +44,18 @@ router.get('/user', auth, async (req, res, next) => {
   }
 })
 
+router.post("/userContent", auth, async (req, res, next) => {
+  try {
+    const entity = {
+      // isLatestContent: true,
+      userId: req.user.id,
+      contentId: req.body.contentId
+    }
+    const addContent = await UserContent.create(entity)
+    res.send(addContent)
+  } catch (error) {
+  }
+})
+
 
 module.exports = router

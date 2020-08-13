@@ -3,6 +3,7 @@ const cors = require("cors")
 const userRouter = require("./user/router")
 const eventRouter = require("./event/router")
 const authRouter = require('./auth/router')
+const contentRouter = require('./content/router')
 const seedFunction = require('./seeds/usersAndStatistics')
 
 const app = express()
@@ -20,3 +21,5 @@ app.use(jsonParser)
 app.use(userRouter)
 app.use(eventRouter)
 app.use(authRouter)
+app.use(contentRouter)
+

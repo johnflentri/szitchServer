@@ -1,6 +1,9 @@
 const User = require("../user/model");
 const Event = require("../event/model");
+const Content = require("../content/model");
 const bcrypt = require("bcrypt");
+
+// import smokeTutorialImage from '../src/images/smokeTutorialImage.jpg'
 
 module.exports = async function seedUsersAndStatistics() {
   const userPassword = bcrypt.hashSync("1", 10)
@@ -115,4 +118,24 @@ module.exports = async function seedUsersAndStatistics() {
     prize2: "€75",
     prize3: "€25",
   });
+
+  const smokeTutorial = await Content.create({
+    isLatestContent: true,
+    title: "Smoke Tutorial",
+    img: 'https://i.ytimg.com/vi/3j_vbimOu5g/maxresdefault.jpg',
+  });
+  const awpClutch = await Content.create({
+    isLatestContent: true,
+    title: "Awp Clutch",
+    img: 'https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/144765230/original/d05ddb322c8341bd2bb373ba5a639862bb0fd641/make-you-a-csgo-youtube-thumbnail.png',
+  });
+  const wow = await Content.create({
+    isLatestContent: true,
+    title: "wow",
+    img: 'https://i.pinimg.com/originals/19/c3/73/19c373384913cc6d6e987e34a85a8260.jpg',
+  });
+
+  user1.addContent(smokeTutorial)
+  user2.addContent(awpClutch)
+  user3.addContent(wow)
 }
