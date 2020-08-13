@@ -94,7 +94,7 @@ module.exports = async function seedUsersAndStatistics() {
     killDeathRatio: 0.87,
     averageDamagePerRound: 75,
     overallRank: 6,
-    avatarURL: "https://lh3.googleusercontent.com/proxy/ZvuTBLyLyeb9yTHOS_ucTVUeDbze3tVBHpPs4WXY3iPmu9HnmkndA-D-Ve5Eju_9lfunMw1TXnMXtRYbvAgmflQU1kdfVj-2aA",
+    avatarURL: "https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/7283/ninja-clipart-md.png",
     newPlayer: true
   });
 
