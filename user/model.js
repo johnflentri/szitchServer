@@ -1,5 +1,6 @@
 const Sequelize = require('sequelize')
 const db = require('../db')
+const Content = require('../content/model')
 
 const User = db.define('user', {
   username: {
@@ -54,5 +55,7 @@ const User = db.define('user', {
   timestamps: false,
   tableName: 'users'
 })
+
+User.hasMany(Content)
 
 module.exports = User
