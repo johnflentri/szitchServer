@@ -187,5 +187,10 @@ module.exports = async function seedUsersAndStatistics() {
   user2.addContent(awpClutch)
   user3.addContent(wow)
 
-  // team1.addUser(user1)
+  team1.addUser(user1)
+  team1.addUser(user2)
+  team1.addUser(user3)
+  team2.addUser(user4)
+  team3.addUser(user5)
+  team3.addUser(user6)
 }
