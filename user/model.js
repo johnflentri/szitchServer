@@ -1,6 +1,7 @@
 const Sequelize = require('sequelize')
 const db = require('../db')
 const Content = require('../content/model')
+// const Team = require('../team/model')
 
 const User = db.define('user', {
   username: {
@@ -57,5 +58,6 @@ const User = db.define('user', {
 })
 
 User.hasMany(Content)
+// User.belongsTo(Team)
 
 module.exports = User

@@ -13,4 +13,17 @@ router.get('/teams', auth, async (req, res, next) => {
   }
 })
 
+router.post("/teamUsers", auth, async (req, res, next) => {
+  try {
+    const entity = {
+      // isLatestContent: true,
+      userId: req.user.id,
+      teamId: req.body.teamId
+    }
+    const addUser = await TeamUsers.create(entity)
+    res.send(addUser)
+  } catch (error) {
+  }
+})
+
 module.exports = router

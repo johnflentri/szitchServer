@@ -57,5 +57,18 @@ router.post("/userContent", auth, async (req, res, next) => {
   }
 })
 
+// router.post("/userTeam", auth, async (req, res, next) => {
+//   try {
+//     const entity = {
+//       // isLatestContent: true,
+//       userId: req.user.id,
+//       teamId: req.body.teamId
+//     }
+//     const addTeam = await UserTeam.create(entity)
+//     res.send(addTeam)
+//   } catch (error) {
+//   }
+// })
+
 
 module.exports = router

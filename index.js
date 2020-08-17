@@ -24,4 +24,3 @@ app.use(eventRouter)
 app.use(authRouter)
 app.use(contentRouter)
 app.use(teamRouter)
-
