@@ -1,6 +1,8 @@
 const Sequelize = require('sequelize')
 const db = require('../db')
 const User = require('../user/model')
+// const Event = require('../event/model')
+// const TeamEvent = require('../TeamEvent/model')
 
 const Team = db.define('team', {
   teamName: {
@@ -13,23 +15,23 @@ const Team = db.define('team', {
   },
   player1: {
     type: Sequelize.STRING,
-    allowNull: false
+    allowNull: true
   },
   player2: {
     type: Sequelize.STRING,
-    allowNull: false
+    allowNull: true
   },
   player3: {
     type: Sequelize.STRING,
-    allowNull: false
+    allowNull: true
   },
   player4: {
     type: Sequelize.STRING,
-    allowNull: false
+    allowNull: true
   },
   player5: {
     type: Sequelize.STRING,
-    allowNull: false
+    allowNull: true
   }
 }, {
   timestamps: false,
@@ -37,5 +39,6 @@ const Team = db.define('team', {
 })
 
 Team.hasMany(User)
+// Team.belongsToMany(Event, { through: TeamEvent, foreignKey: "teamId" })
 
 module.exports = Team

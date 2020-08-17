@@ -106,6 +106,14 @@ module.exports = async function seedUsersAndStatistics() {
     prize1: "€250",
     prize2: "€75",
     prize3: "€25",
+    team1: null,
+    team2: null,
+    team3: null,
+    team4: null,
+    team5: null,
+    team6: null,
+    team7: null,
+    team8: null,
   });
 
   const DreamHackMasters = await Event.create({
@@ -117,6 +125,14 @@ module.exports = async function seedUsersAndStatistics() {
     prize1: "€250",
     prize2: "€75",
     prize3: "€25",
+    team1: null,
+    team2: null,
+    team3: null,
+    team4: null,
+    team5: null,
+    team6: null,
+    team7: null,
+    team8: null,
   });
 
   const smokeTutorial = await Content.create({
@@ -140,34 +156,36 @@ module.exports = async function seedUsersAndStatistics() {
   const team1 = await Team.create({
     teamName: "team1",
     teamLogo: "https://i.imgur.com/M9Rh3JD.jpg",
-    player1: "player1",
-    player2: "player2",
-    player3: "player3",
-    player4: "player4",
-    player5: "player5",
+    player1: null,
+    player2: null,
+    player3: null,
+    player4: null,
+    player5: null,
   })
 
   const team2 = await Team.create({
     teamName: "team2",
     teamLogo: "https://i.imgur.com/rfRBpM8.png",
-    player1: "player1",
-    player2: "player2",
-    player3: "player3",
-    player4: "player4",
-    player5: "player5",
+    player1: null,
+    player2: null,
+    player3: null,
+    player4: null,
+    player5: null,
   })
 
   const team3 = await Team.create({
     teamName: "team3",
     teamLogo: "https://i.pinimg.com/originals/4a/6f/d0/4a6fd0db62d1e848795aa922eeb9f38d.jpg",
-    player1: "player1",
-    player2: "player2",
-    player3: "player3",
-    player4: "player4",
-    player5: "player5",
+    player1: null,
+    player2: null,
+    player3: null,
+    player4: null,
+    player5: null,
   })
 
   user1.addContent(smokeTutorial)
   user2.addContent(awpClutch)
   user3.addContent(wow)
+
+  // team1.addUser(user1)
 }

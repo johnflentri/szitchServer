@@ -33,7 +33,39 @@ const Event = db.define('event', {
   prize3: {
     type: Sequelize.STRING,
     allowNull: true
-  }
+  },
+  team1: {
+    type: Sequelize.STRING,
+    allowNull: true
+  },
+  team2: {
+    type: Sequelize.STRING,
+    allowNull: true
+  },
+  team3: {
+    type: Sequelize.STRING,
+    allowNull: true
+  },
+  team4: {
+    type: Sequelize.STRING,
+    allowNull: true
+  },
+  team5: {
+    type: Sequelize.STRING,
+    allowNull: true
+  },
+  team6: {
+    type: Sequelize.STRING,
+    allowNull: true
+  },
+  team7: {
+    type: Sequelize.STRING,
+    allowNull: true
+  },
+  team8: {
+    type: Sequelize.STRING,
+    allowNull: true
+  },
 }, {
   timestamps: false,
   tableName: 'events'
