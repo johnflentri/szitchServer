@@ -50,7 +50,7 @@ const User = db.define('user', {
   },
   newPlayer: {
     type: Sequelize.BOOLEAN,
-    allowNull: false
+    allowNull: true
   },
 }, {
   timestamps: false,

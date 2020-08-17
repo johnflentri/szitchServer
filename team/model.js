@@ -1,9 +1,6 @@
 const Sequelize = require('sequelize')
 const db = require('../db')
 const User = require('../user/model')
-// const Event = require('../event/model')
-// const TeamEvent = require('../TeamEvent/model')
-// const TeamUsers = require('../teamUsers/model')
 
 const Team = db.define('team', {
   teamName: {
@@ -39,8 +36,6 @@ const Team = db.define('team', {
   tableName: 'teams'
 })
 
-// Team.hasMany(User)
-// Team.belongsToMany(Event, { through: TeamEvent, foreignKey: "teamId" })
 Team.hasMany(User, { foreignKey: "teamId" });
 
 module.exports = Team
