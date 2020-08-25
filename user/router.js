@@ -57,18 +57,23 @@ router.post("/userContent", auth, async (req, res, next) => {
   }
 })
 
-// router.post("/userTeam", auth, async (req, res, next) => {
-//   try {
-//     const entity = {
-//       // isLatestContent: true,
-//       userId: req.user.id,
-//       teamId: req.body.teamId
-//     }
-//     const addTeam = await UserTeam.create(entity)
-//     res.send(addTeam)
-//   } catch (error) {
-//   }
-// })
+router.put(
+  '/user/:id', async (req, res, next) => {
+    try {
+      const entity = {
+        avatarURL: req.body.newAvatarURL
+      }
+      // const { id } = req.user
+      const user = await User.findByPk(1)
+      console.log('req.body test:', req.body)
+      console.log('user test:', user.dataValues)
+      const updated = await user.update(entity)
+      res.send(updated)
+    } catch (error) {
+      next(error)
+    }
+  }
+)
 
 
 module.exports = router
